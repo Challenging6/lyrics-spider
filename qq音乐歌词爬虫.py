@@ -4,6 +4,7 @@ from requests import ConnectionError
 import re
 import asyncio
 import aiohttp
+
 album_urls = 'https://c.y.qq.com/v8/fcg-bin/fcg_v8_singer_album.fcg?g_tk=1705274270&jsonpCallback=MusicJsonCallbacksinger_album&loginUin=992871471&hostUin=0&format=jsonp&inCharset=utf8&outCharset=utf-8&notice=0&platform=yqq&needNewCode=0&singermid={singermid}&order=time&begin=0&num=30&exstatus=1'
 song_info_url = "https://c.y.qq.com/lyric/fcgi-bin/fcg_query_lyric.fcg?nobase64=1&musicid={musicid}"
 album_url = "https://y.qq.com/n/yqq/album/{album_id}.html"
